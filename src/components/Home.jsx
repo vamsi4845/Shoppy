@@ -1,6 +1,7 @@
 import { CartState } from "../context/Context"
 import SingleProduct from "./SingleProduct"
 import Filters from "./Filters"
+import { Container, Row, Col } from "react-bootstrap"
 const Home = () => {
     const { state: { products }, productState: { byStock, byFastDelivery, sort, byRating, searchQuery } } = CartState()
 
@@ -33,7 +34,7 @@ const Home = () => {
     return (
         <div className="home">
             <Filters />
-            <div className="productContainer">
+            <div className="productContainer ">
                 {transformProducts().map((prod) => {
                     return <SingleProduct prod={prod} key={prod.id} />
                 })}

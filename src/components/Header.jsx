@@ -10,16 +10,8 @@ const Header = () => {
         <Navbar bg='dark' variant='dark' style={{ height: 80 }}>
             <Container>
                 <Navbar.Brand>
-                    <Link to='/'>Shopping Cart</Link>
+                    <Link to='/'>Shoppy</Link>
                 </Navbar.Brand>
-                <Navbar.Text className='search'>
-                    <FormControl style={{ width: 500 }} placeholder='Search a product' onChange={(e) => {
-                        productDispatch({
-                            type: "FILTER_BY_SEARCH",
-                            payload: e.target.value,
-                        })
-                    }} className='m-auto' />
-                </Navbar.Text>
                 <Nav>
                     <Dropdown alignRight >
                         <Dropdown.Toggle variant="success">
@@ -38,7 +30,7 @@ const Header = () => {
                                             />
                                             <div className="cartItemDetail">
                                                 <span>{prod.name}</span>
-                                                <span>₹ {prod.price.split(".")[0]}</span>
+                                                <span>₹ {prod.price}</span>
                                             </div>
                                             <DeleteIcon
                                                 fontSize="20px"
