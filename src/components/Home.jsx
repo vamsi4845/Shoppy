@@ -1,7 +1,6 @@
 import { CartState } from "../context/Context"
 import SingleProduct from "./SingleProduct"
 import Filters from "./Filters"
-import { Container, Row, Col } from "react-bootstrap"
 const Home = () => {
     const { state: { products }, productState: { byStock, byFastDelivery, sort, byRating, searchQuery } } = CartState()
 

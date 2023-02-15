@@ -1,11 +1,11 @@
-import { Badge, Button, Container, Dropdown, FormControl, Nav, Navbar, NavLink } from 'react-bootstrap'
+import { Badge, Button, Container, Dropdown, Nav, Navbar } from 'react-bootstrap'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { Link } from 'react-router-dom'
 import "./styles.css"
 import { CartState } from '../context/Context';
 const Header = () => {
-    const { state: { cart }, dispatch, productDispatch } = CartState()
+    const { state: { cart }, dispatch } = CartState()
     return (
         <Navbar bg='dark' variant='dark' style={{ height: 80 }}>
             <Container>
