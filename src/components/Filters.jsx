@@ -9,9 +9,9 @@ const Filters = () => {
             <span>
                 <Form.Check
                     inline
-                    label="Ascending"
+                    label="LowToHigh"
                     name="group1"
-                    type="radio"
+                    // type="checkbox"
                     id={`inline-1`}
                     onChange={() => productDispatch({
                         type: "SORT_BY_PRICE",
@@ -23,9 +23,9 @@ const Filters = () => {
             <span>
                 <Form.Check
                     inline
-                    label="Descending"
+                    label="HighToLow"
                     name="group1"
-                    type="radio"
+                    // type="checkbox"
                     id={`inline-2`}
                     onChange={() => productDispatch({
                         type: "SORT_BY_PRICE",

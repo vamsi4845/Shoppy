@@ -3,6 +3,12 @@
     text-align: center;
     font-size: 30px;
     margin: 10px 0;
+    position: sticky;
+    top: 0px;
+}
+
+.search {
+    width: 500px;
 }
 
 .cartitem {
@@ -23,7 +29,7 @@
 .cartItemDetail {
     display: flex;
     flex: 1;
-    padding: 0 20px;
+    padding: 0px 15px;
     flex-direction: column;
 }
 
@@ -31,6 +37,7 @@
 
 .home {
     display: flex;
+    margin-top: 7px;
 }
 
 .filters {
@@ -42,6 +49,7 @@
     width: 18%;
     margin: 10px;
     height: 86vh;
+    border-radius: 7px;
 }
 
 .filters>span {
@@ -57,7 +65,7 @@
     width: 80%;
     padding: 0px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .products {
