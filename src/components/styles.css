@@ -7,6 +7,12 @@
     top: 0px;
 }
 
+.logo {
+    height: 60px;
+    width: 130px;
+    margin-top: 1rem;
+}
+
 .search {
     width: 500px;
 }
@@ -43,12 +49,12 @@
 .filters {
     background-color: #343a40;
     color: white;
-    padding: 20px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
-    width: 18%;
-    margin: 10px;
-    height: 86vh;
+    width: 21%;
+    margin: 1px;
+    height: 75vh;
     border-radius: 7px;
 }
 
@@ -70,11 +76,12 @@
 
 .products {
     width: 21%;
-    margin: 10px
+    margin: 2px
 }
 
 .summary {
-    width: 30%;
+    width: 26%;
+    margin: 1px 1px 0px 4px;
 }
 
 @media (max-width: 771px) {

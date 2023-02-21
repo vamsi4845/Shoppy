@@ -5,7 +5,7 @@ const Filters = () => {
     const { productDispatch, productState: { byStock, byFastDelivery, sort, byRating } } = CartState()
     return (
         <div className="filters">
-            <span className="title">Filter Products</span>
+            <span className="title">Filter By</span>
             <span>
                 <Form.Check
                     inline

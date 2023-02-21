@@ -1,21 +1,23 @@
-import { Badge, Button, Container, Dropdown, Nav, Navbar, FormControl } from 'react-bootstrap'
+import { Badge, Button, Container, Dropdown, Nav, Navbar, FormControl, Figure } from 'react-bootstrap'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import DeleteIcon from '@mui/icons-material/Delete';
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom';
+import logo from "../assets/logo.png"
 import "./styles.css"
 import { CartState } from '../context/Context';
 const Header = () => {
     const { state: { cart }, dispatch, productDispatch } = CartState()
     return (
-        <Navbar bg='dark' variant='dark' style={{ height: 80 }}>
+        <Navbar bg="dark" sticky="top" variant='dark' style={{ height: 80 }}>
             <Container>
-                <Navbar.Brand>
-                    <Link to='/'>Shoppy</Link>
+                <Navbar.Brand >
+                    <Link to="/">
+                        <Figure><Figure.Image style={{ width: 180, height: 65, paddingTop: 20 }} alt="100x50" src={logo} /></Figure>
+                    </Link>
                 </Navbar.Brand>
                 {useLocation().pathname.split("/")[1] !== "cart" && (
                     <Navbar.Text className="search">
                         <FormControl
-                            // style={{ width: 500 }}
                             type="search"
                             placeholder="Search a product..."
                             className="m-auto"
